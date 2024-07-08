@@ -45,7 +45,7 @@ public class _85 {
     }
 
     public static void main(String[] args) {
-        System.out.println(countPairs(6));
+        System.out.println(countPairs(4));
     }
 
 
