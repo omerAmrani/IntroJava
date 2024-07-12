@@ -6,7 +6,6 @@ public class _83 {
 
         while (low <= high && high < arr.length) {
 
-
             if (sum > num) {
                 System.out.println(low + " to " + high + " is " + sum);
                 if (high - low + 1 < min ) min = high - low + 1;

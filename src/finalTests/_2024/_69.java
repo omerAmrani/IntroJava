@@ -3,16 +3,16 @@ package finalTests._2024;
 public class _69 {
 
     public static int count(int sum) {
-        return count(sum, 0);
+        return count(sum, 1);
     }
 
-    // TODO
-    private static int count(int sum, int val) {
-        if (sum < val) return 0;
-        if (sum == val) return 1;
-        System.out.println(val);
+    private static int count(int sum, int start) {
+        if (sum == 0) return 1;
 
-        return count(sum, val + (val + 1)) +  count(sum, val + (val+ 2));
+        if (sum < start) return 0;
+
+        return count(sum, start + 1) +
+                count(sum - start, start + 1);
     }
 
     /**
