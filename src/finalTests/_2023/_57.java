@@ -2,7 +2,7 @@ package finalTests._2023;
 
 public class _57 {
 
-    // 1 2
+    // Finish 1 2
 
     // Hard
     public static int selectedPrimes(int num, int x) {

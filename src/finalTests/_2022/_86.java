@@ -2,6 +2,7 @@ package finalTests._2022;
 
 public class _86 {
 
+    // Finish 1 2 3
     public static int maxPath(int[][] mat) {
         return maxPath(mat, 0 ,0,0);
     }
@@ -43,10 +44,6 @@ public class _86 {
             }
         }
     }
-
-    // 3 Trace Tree iPad
-    // 5 Trace List TODO
-
 
     public static void main(String[] args) {
         int[][] matrix = {
