@@ -6,9 +6,7 @@ public class _57 {
 
     // Hard
     public static int selectedPrimes(int num, int x) {
-
         return selectedPrimes(num, x, 2, 0);
-
     }
 
     private static int selectedPrimes(int num, int x, int prime, int count) {

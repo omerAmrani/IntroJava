@@ -2,7 +2,7 @@ package finalTests._2024;
 
 public class _75 {
 
-    // Finish 1 2 3
+    // Finish 1 2 3 4 5
     public static int countEqualDiff(int[] a) {
         return count(a, 0, 0, 0, 0 , "" , "", 0);
     }

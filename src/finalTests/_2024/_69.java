@@ -2,6 +2,7 @@ package finalTests._2024;
 
 public class _69 {
 
+    // Finish 1 2
     public static int count(int sum) {
         return count(sum, 1);
     }
