@@ -8,4 +8,9 @@ public class _90 {
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        int[] a = {1,4,6,11,15};
+        System.out.println(findSmallest(a));
+    }
 }

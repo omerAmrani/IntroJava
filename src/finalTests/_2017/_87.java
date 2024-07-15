@@ -2,17 +2,16 @@ package finalTests._2017;
 
 public class _87 {
     public static boolean isPythagorean(int[] arr) {
-        for (int i = arr.length -1; i > 1; i--) {
-            int low = 0, high = i -1;
-            while (low < high) {
-                int sum = pow(arr[low]) + pow(arr[high]);
-                if (sum == pow(arr[i])) {
-                    System.out.println(arr[low] + " " + arr[high]);
-                    return true;
-                }
-                else if (sum > pow(arr[i])) high--;
-                else low++;
+
+        int low = 0, high = arr.length -1;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (pow(arr[mid - 1]) + pow(arr[mid]) == pow(arr[mid + 1])) {
+                System.out.println(arr[mid - 1] + " " + arr[mid] + " " + arr[mid + 1]);
+                return true;
             }
+            else if (pow(arr[mid - 1]) + pow(arr[mid]) > pow(arr[mid + 1])) high = mid - 1;
+            else low = mid + 1;
         }
         return false;
     }
