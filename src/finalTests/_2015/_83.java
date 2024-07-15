@@ -16,18 +16,24 @@ public class _83 {
     }
 
     public static boolean sum3(int[] arr, int num) {
-        for (int i = arr.length - 1; i > 2 ; i--) {
+        int low = 0, high = arr.length -1;
+        while (low < high) {
+            int diff = num - (arr[low] + arr[high]);
+            if (binarySearch(arr, diff)) return true;
+            if ((arr[low] + arr[high]) > num) high--;
+            else low++;
+        }
+        return false;
+    }
 
-            int low = 0, high = i - 1;
-            while (low < high) {
-                int sum = arr[low] + arr[high] + arr[i];
-                if (sum == num) {
-                    System.out.println(arr[low] + " " + arr[high] + " " + arr[i]);
-                    return true;
-                }
-                else if (sum > num) high --;
-                else low++;
-            }
+    private static boolean binarySearch(int[] arr, int num) {
+        int low = 0, high = arr.length - 1;
+        while (low <= high) {
+            int mid = (low+ high) / 2;
+
+            if (arr[mid] == num) return true;
+            if (arr[mid] < num) low = mid + 1;
+            else high = mid - 1;
         }
         return false;
     }

@@ -44,7 +44,6 @@ public class _75 {
            } else i++;
 
        }
-
         for (int j = 0; j < arr.length; j++) {
             if (arr[i] != i + 1) return i + 1;
         }
