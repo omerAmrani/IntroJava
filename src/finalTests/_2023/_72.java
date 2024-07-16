@@ -4,15 +4,15 @@ public class _72 {
     // Finish 2
 
     public static int friend3(int[][] mat) {
-        return friend3(mat, 0, 1, 2);
+        return friend3(mat, 0, 0, 0);
     }
 
     private static int friend3(int[][] mat, int i, int j, int k) {
-        if (i > mat.length || j > mat.length || k > mat.length) return 0;
-        if (i == j || j == k || k == i) return 0;
-        if (mat[i][j] == 0 || mat[j][k] == 0) return 0;
+        if (i == mat.length || j == mat.length || k == mat.length) return 0;
 
         if (mat[i][j] == 1 && mat[j][k] == 1) {
+            if (i == j || j == k || k == i) return 0;
+
             System.out.println(i + " " + j + " " + k);
             return 1;
         }

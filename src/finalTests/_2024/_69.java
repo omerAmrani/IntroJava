@@ -29,7 +29,9 @@ public class _69 {
 
         for (int i = 0; i < arr.length; i++) {
 
+            // O(1)
             for (int j = 1; j <= 9; j++) {
+
                 if (s - j <= (arr.length - 1 - i) * 9) {
                     arr[i] = j;
                     s = s- j;
@@ -40,6 +42,9 @@ public class _69 {
     }
 
     public static void main(String[] args) {
+        int[] b= new int[4];
+        minNumWithSum(b , 14);
+
         int a = count(7);
         System.out.println(a);
     }

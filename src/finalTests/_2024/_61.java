@@ -3,6 +3,7 @@ package finalTests._2024;
 public class _61 {
     // Finish 1 2 3 4 5
     public static int whatElf(int[] a) {
+        // calculate max diff
         int min = a[0], diff = 0;
 
         for (int i = 0; i < a.length; i++) {
