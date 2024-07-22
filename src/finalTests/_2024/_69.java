@@ -19,7 +19,7 @@ public class _69 {
     /**
      * The method fills the array with numbers that will be equal to s
      * The number need to be minimum
-     * Time complexity is O(n).
+     * Time lessons.complexity is O(n).
      * @param arr fill with 0.
      * @param s
      */

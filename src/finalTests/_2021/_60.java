@@ -14,7 +14,7 @@ public class _60 {
     }
 
     /**
-     * splitting the recursion between each part
+     * splitting the lessons.recursion between each part
      * @param arr
      * @param index only calculate when reaching the end of the array
      * @param sum1

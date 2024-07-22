@@ -51,7 +51,7 @@ public class _85 {
 
     /**
      * Remove cells from K until reach 0.
-     * time complexity of O(n).
+     * time lessons.complexity of O(n).
      * @param arr
      * @param k
      * @return

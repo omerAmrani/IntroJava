@@ -21,7 +21,7 @@ public class _96 {
 
     /**
      * with almost sorted array, check if there is a cell that equal to num.
-     * Time complexity is O(log n), binary search.
+     * Time lessons.complexity is O(log n), binary search.
      * The inner while loop will run max of K times, so it counts as O(1).
      * @param a array that is almost sorted by K:
      *          1. does not have negative numbers.
